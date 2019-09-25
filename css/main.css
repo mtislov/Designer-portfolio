@@ -15,6 +15,7 @@ body {
   padding: 0 15px;
   box-sizing: border-box;
 }
+/* HEADER */
 .header {
   padding-top: 18px;
   padding-bottom: 15px;
@@ -58,18 +59,45 @@ body {
   justify-content: space-between;
   height: 100%;
   align-items: center;
-  max-width: 365px;
-  width: 100%;
 }
 .menu__link {
+  display: block;
   font-size: 14px;
-  line-height: 1.45;
   font-weight: bold;
   letter-spacing: 0.7px;
   color: #2b2a2c;
   text-transform: uppercase;
   transition: border 0.3s;
+  border-bottom: 3px solid transparent;
 }
 .menu__link:hover {
-  border-bottom: 3px solid #2b2a2c;
+  border-color: #2b2a2c;
+}
+.menu__link.menu__btn {
+  padding: 10px 32px;
+  border-radius: 30px;
+  border: 3px solid #2b2a2c;
+  line-height: 1ю
+        transition: 
+        background 0.3s, 
+        color 0.3s;
+}
+.menu__link.menu__btn:hover {
+  background-color: #2b2a2c;
+  color: #ffffff;
+}
+/* INTRO */
+.intro {
+  padding-top: 15px;
+}
+.intro__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.intro__content {
+  padding-top: 90px;
+}
+.intro__subtitle {
+  font-size: 32px;
+  font-weight: 200;
 }

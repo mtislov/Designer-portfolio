@@ -22,6 +22,8 @@ body {
     box-sizing: border-box;
 }
 
+/* HEADER */
+
 .header {
     padding-top: 18px;
     padding-bottom: 15px;
@@ -72,24 +74,61 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: center;
-    max-width: 365px;
-    width: 100%;
-}
-
-.menu__item {
-    
 }
 
 .menu__link {
-
+    display: block;
     font-size: 14px;
-    line-height: 1.45;
     font-weight: bold;
     letter-spacing: 0.7px;
     color: @black;
     text-transform: uppercase;
     transition: border 0.3s;
+    border-bottom: 3px solid transparent;
     &:hover {
-        border-bottom: 3px solid @black;
+        border-color: @black;
     }
+
+    &.menu__btn {
+        padding: 10px 32px;
+        border-radius: 30px;
+        border: 3px solid @black;
+        line-height: 1ю
+        transition: 
+        background 0.3s, 
+        color 0.3s; 
+
+        &:hover {
+            background-color: @black;
+            color: @white;
+        }
+    }
+}
+
+/* INTRO */
+
+.intro {
+    padding-top: 15px;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__content {
+    padding-top: 90px;
+}
+
+.intro__subtitle {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.intro__title {
+
+}
+
+.intro__text {
+
 }
