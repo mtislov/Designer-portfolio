@@ -132,6 +132,11 @@ body {
   font-size: 30px;
   vertical-align: middle;
   color: #ffffff;
+  transition: opacity 0.3s;
+}
+.social__link .fab:hover,
+.social__link .fab:active {
+  opacity: 0.5;
 }
 .social__link.be {
   background-color: #1869ff;
@@ -150,4 +155,32 @@ body {
 }
 .social__link.tw {
   background-color: #56acef;
+}
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Monserrat", sans-serif;
+  letter-spacing: 0.8;
+  text-transform: uppercase;
+  color: #6A696B;
+  background-color: #ffffff;
+  border: 2px solid #6A696B;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 17px 0;
+  margin: 42px 15px 0px 0px;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.btn.btn--short {
+  width: 160px;
+}
+.btn.btn--long {
+  width: 200px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #2b2a2c;
+  border-color: #2b2a2c;
+  color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
 }
