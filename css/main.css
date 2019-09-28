@@ -92,12 +92,14 @@ body {
 }
 .intro__inner {
   display: flex;
-  justify-content: space-between;
-}
-.intro__content {
-  padding-top: 70px;
+  background: url("../img/intro/bg.png") no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding-bottom: 125px;
+  border-bottom: 1px solid #EFEFEF;
 }
 .intro__subtitle {
+  padding-top: 70px;
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 200;
