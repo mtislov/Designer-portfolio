@@ -186,3 +186,22 @@ body {
   color: #ffffff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
 }
+/* WORK */
+.works {
+  padding-top: 40px;
+}
+.works__nav {
+  display: flex;
+  max-width: 255px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.works__nav-link {
+  font-size: 15px;
+  line-height: 1.37;
+  color: #6A696B;
+}
+.works__nav-link:hover {
+  text-decoration: underline;
+}
