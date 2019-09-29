@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: @black;
@@ -92,7 +92,7 @@ body {
     &.menu__btn {
         padding: 10px 32px;
         border-radius: 30px;
-        border: 3px solid @black;
+        border: 2px solid @black;
         transition: 
         background 0.3s, 
         color 0.3s; 
@@ -200,7 +200,7 @@ body {
     text-transform: uppercase;
     color: @gray;
     background-color: @white;
-    border: 2px solid @gray;
+    border: 1px solid @gray;
     cursor: pointer;
     border-radius: 30px;
     padding: 17px 0;
@@ -264,9 +264,14 @@ body {
     width: 33.3333%;
     height: 370px;
     margin: 15px 15px;
-    box-shadow: 0px 0px 4px @black;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
     border-radius: 10px;
     overflow: hidden;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0px 0px 25px rgba(0,0,0,0.25);
+    }
 }
 
 .portfolio__img {
@@ -300,3 +305,53 @@ body {
     }
 }
 
+/* about */
+
+.about {
+    padding-top: 105px;
+    padding-bottom: 140px;
+}
+
+.about__inner {
+    max-width: 1080px;
+    display: flex;
+}
+
+.about__bg {
+    width: 50%;
+    height: 608px;
+    background: url("../img/about/about-bg.png") no-repeat;
+}
+
+.about__content {
+    width: 50%;
+    padding: 23px 0px 0px 40px;
+    box-sizing: border-box;
+}
+
+.about__title {
+    font-size: 45px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.about__who {
+    font-size: 92px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.15;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    color: @gray;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 300;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
