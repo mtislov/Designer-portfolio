@@ -65,7 +65,7 @@ body {
 }
 
 .nav {
-    max-width: 525px;
+    max-width: 585px;
     width: 100%;
 }
 
@@ -153,6 +153,11 @@ body {
     text-align: center;
     vertical-align: middle;
 
+    &:hover .fab,
+    &:active .fab {
+        opacity: 0.5;
+    }
+
     .fab {
         padding-top: 5px;
         display: inline-block;
@@ -160,11 +165,6 @@ body {
         vertical-align: middle;
         color: @white;
         transition: opacity 0.3s;
-        &:hover,
-        &:active {
-            opacity: 0.5;
-        }
-
     }
 
     &.be {

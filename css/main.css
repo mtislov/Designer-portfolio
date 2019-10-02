@@ -51,7 +51,7 @@ body {
   color: #6A696B;
 }
 .nav {
-  max-width: 525px;
+  max-width: 585px;
   width: 100%;
 }
 .menu {
@@ -126,6 +126,10 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+.social__link:hover .fab,
+.social__link:active .fab {
+  opacity: 0.5;
+}
 .social__link .fab {
   padding-top: 5px;
   display: inline-block;
@@ -133,10 +137,6 @@ body {
   vertical-align: middle;
   color: #ffffff;
   transition: opacity 0.3s;
-}
-.social__link .fab:hover,
-.social__link .fab:active {
-  opacity: 0.5;
 }
 .social__link.be {
   background-color: #1869ff;
