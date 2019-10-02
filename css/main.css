@@ -453,4 +453,16 @@ body {
 }
 .footer__right .menu__link {
   color: inherit;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.footer__right .menu__link:hover {
+  border-bottom: 2px solid #ffffff;
+}
+.footer__right .menu__btn {
+  margin-right: 0px;
+  border-color: #6A696B;
+}
+.footer__right .menu__btn:hover {
+  border-color: #ffffff;
 }
