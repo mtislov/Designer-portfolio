@@ -8,8 +8,11 @@ body {
   color: #2b2a2c;
   line-height: 1.4;
 }
-body.no-scroll {
+body.scroll-off {
   overflow: hidden;
+}
+body.scorll-on {
+  overflow: auto;
 }
 .container {
   width: 100%;
@@ -471,7 +474,6 @@ body.no-scroll {
 }
 /* Modals */
 .modal {
-  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
@@ -482,6 +484,12 @@ body.no-scroll {
   left: 0;
   z-index: 100;
   background-color: rgba(6, 15, 49, 0.9);
+}
+.modal.active {
+  display: flex;
+}
+.modal.no-active {
+  display: none;
 }
 .modal__dialog {
   box-sizing: border-box;
@@ -531,4 +539,58 @@ body.no-scroll {
   font-weight: 300;
   line-height: 2;
   color: #6A696B;
+}
+/* Modals / resume */
+.resume__title {
+  text-align: center;
+  font-size: 45px;
+  line-height: 1.17;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 80px 0 55px 0;
+}
+.resume__btns {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.resume__btn {
+  width: 147px;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  padding: 8px 0;
+  margin-right: 10px;
+  margin-top: 0;
+}
+.resume__btn:last-child {
+  margin-right: 0px;
+}
+/* Modals / resume / timeline*/
+.timeline {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.timeline__left,
+.timeline__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.timeline__left {
+  border-right: 1px solid #6A696B;
+  text-align: right;
+  padding-right: 47px;
+}
+.timeline__right {
+  padding-left: 47px;
+}
+.timeline__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
