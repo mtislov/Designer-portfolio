@@ -351,7 +351,7 @@ body.scorll-on {
   font-style: italic;
   margin-bottom: 7px;
 }
-/* blog */
+/* BLOG */
 .blog {
   padding-top: 90px;
 }
@@ -477,7 +477,7 @@ body.scorll-on {
 .footer__right .menu__btn:hover {
   border-color: #ffffff;
 }
-/* Modals */
+/* MODALS */
 .modal {
   padding: 15px;
   box-sizing: border-box;
@@ -552,7 +552,8 @@ body.scorll-on {
   line-height: 1.17;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 80px 0 55px 0;
+  margin: 0 0 55px 0;
+  padding-top: 80px;
 }
 .resume__btns {
   text-align: center;

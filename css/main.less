@@ -534,12 +534,12 @@ body {
     font-size: 14px;
     background: @black;
     color: #8D8D8E;
-}
 
-.footer__inner {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
 }
 
 .footer__left {
@@ -562,7 +562,6 @@ body {
 }
 
 .footer__right {
-
     .menu__link {
         color: inherit;
         font-size: 14px;
@@ -580,12 +579,11 @@ body {
 
         &:hover {
             border-color: @white;
-            
         }
     }
 }
 
-/* Modals */
+/* MODALS */
 
 .modal {
     padding: 15px;
@@ -606,101 +604,101 @@ body {
     &.no-active {
         display: none;
     }
-}
 
-.modal__dialog {
-    box-sizing: border-box;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    background-color: @white;
+    &__dialog {
+        box-sizing: border-box;
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        background-color: @white;
+    }
 }
 
 /* Modals / modal-work */
 
 .modal-work {
     display: flex;
-}
 
-.modal-work__content {
-    padding: 50px 95px 175px 27px; 
-}
-
-.modal-work__title {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.modal-work__category {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: @gray;
-    margin-top: 6px;
-    margin-bottom: 30px;
-
-    span {
-        margin-left: 15px;
-        padding-left: 15px;
-        border-left: 1px solid @gray;
+    &__content {
+        padding: 50px 95px 175px 27px; 
     }
-}
 
-.modal-work__client {
-    font-size: 16px;
-    color: @black;
-    font-weight: 700;
-}
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+    }
 
-.modal-work__company {
-   font-size: 14px;
-   color: @gray; 
-   margin-bottom: 25px;
-}
+    &__category {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: @gray;
+        margin-top: 6px;
+        margin-bottom: 30px;
 
-.modal-work__text {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 2;
-    color: @gray;
+        span {
+            margin-left: 15px;
+            padding-left: 15px;
+            border-left: 1px solid @gray;
+        }
+    }
+
+    &__client {
+        font-size: 16px;
+        color: @black;
+        font-weight: 700;
+    }
+
+    &__company {
+        font-size: 14px;
+        color: @gray; 
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 2;
+        color: @gray;
+    }
 }
 
 /* Modals / resume */
 
 .resume {
     
-}
+    &__title {
+        text-align: center;
+        font-size: 45px;
+        line-height: 1.17;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 0 55px 0;
+        padding-top: 80px;
+    }
 
-.resume__title {
-    text-align: center;
-    font-size: 45px;
-    line-height: 1.17;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 80px 0 55px 0;
-}
+    &__btns {
+        text-align: center;
+        margin-bottom: 60px;
+    }
 
-.resume__btns {
-    text-align: center;
-    margin-bottom: 60px;
-}
+    &__btn {
+        width: 147px;
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 2;
+        letter-spacing: 0.05em;
+        padding: 8px 0;
+        margin-right: 10px;
+        margin-top: 0;
+    }
 
-.resume__btn {
-    width: 147px;
-    text-align: center;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 2;
-    letter-spacing: 0.05em;
-    padding: 8px 0;
-    margin-right: 10px;
-    margin-top: 0;
-}
-
-.resume__btn:last-child {
-    margin-right: 0px;
+    &__btn:last-child {
+        margin-right: 0px;
+    }
 }
 
 /* Modals / resume / timeline*/
