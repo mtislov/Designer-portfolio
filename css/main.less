@@ -30,18 +30,19 @@ body {
     box-sizing: border-box;
 }
 
-/* HEADER */
+/* SECTION HEADER */
 
 .header {
     padding-top: 18px;
     padding-bottom: 15px;
-}
 
-.header__inner {
-    height: 57px;
-    background-color: @white;
-    display: flex;
-    justify-content: space-between;
+    &__inner {
+        height: 57px;
+        background-color: @white;
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 
 .logo {
@@ -49,27 +50,33 @@ body {
     max-width: 110px;
     padding-left: 70px;
     position: relative;
-}
 
-.logo__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    width: 57px;
-    height: 57px;
-    background-color: @black;
-}
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        width: 57px;
+        height: 57px;
+        background-color: @black;
+    }
 
-.logo__name {
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
-}
+    &__name {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
 
-.logo__text {
-    font-size: 12px;
-    color: @gray;
+    &__name {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 12px;
+        color: @gray;
+    }
 }
 
 .nav {
@@ -82,32 +89,33 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: center;
-}
-
-.menu__link {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0.7px;
-    color: @black;
-    text-transform: uppercase;
-    transition: border 0.3s;
-    border-bottom: 3px solid transparent;
-    &:hover {
-        border-color: @black;
-    }
-
-    &.menu__btn {
-        padding: 10px 32px;
-        border-radius: 30px;
-        border: 2px solid @black;
-        transition: 
-        background 0.3s, 
-        color 0.3s; 
+    
+    &__link {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        color: @black;
+        text-transform: uppercase;
+        transition: border 0.3s;
+        border-bottom: 3px solid transparent;
 
         &:hover {
-            background-color: @black;
-            color: @white;
+            border-color: @black;
+        }
+
+        &.menu__btn {
+            padding: 10px 32px;
+            border-radius: 30px;
+            border: 2px solid @black;
+            transition: 
+            background 0.3s, 
+            color 0.3s; 
+
+            &:hover {
+                background-color: @black;
+                color: @white;
+            }
         }
     }
 }
@@ -116,36 +124,36 @@ body {
 
 .intro {
     padding-top: 15px;
-}
 
-.intro__inner {
-    display: flex;
-    background: url("../img/intro/bg.png") no-repeat;
-    background-position: right;
-    background-size: contain;
-    padding-bottom: 125px;
-    border-bottom: 1px solid #EFEFEF;
-}
+    &__inner {
+        display: flex;
+        background: url("../img/intro/bg.png") no-repeat;
+        background-position: right;
+        background-size: contain;
+        padding-bottom: 125px;
+        border-bottom: 1px solid #EFEFEF;
+    }
 
-.intro__subtitle {
-    padding-top: 70px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: 200;
-    line-height: 1.60;
-}
+    &__subtitle {
+        padding-top: 70px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 1.60;
+    }
 
-.intro__title {
-    line-height: 1.16;
-    font-weight: bold;
-    font-size: 45px;
-}
+    &__title {
+        line-height: 1.16;
+        font-weight: bold;
+        font-size: 45px;
+    }
 
-.intro__text {
-    line-height: 1.22;
-    font-size: 18px;
-    color: @gray;
-    margin-left: 2px;
+    &__text {
+        line-height: 1.22;
+        font-size: 18px;
+        color: @gray;
+        margin-left: 2px;
+    }
 }
 
 .social {
@@ -240,22 +248,23 @@ body {
 
 .works {
     padding-top: 40px;
-}
 
-.works__nav {
-    display: flex;
-    max-width: 255px;
-    width: 100%;
-    justify-content: space-between;
-    margin: 0 auto;
-}
+    &__nav {
+        display: flex;
+        max-width: 255px;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
 
-.works__nav-link {
-    font-size: 15px;
-    line-height: 1.37;
-    color: @gray;
-    &:hover {
-        text-decoration: underline;
+    &__nav-link {
+        font-size: 15px;
+        line-height: 1.37;
+        color: @gray;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -265,51 +274,52 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px;
-}
 
-.portfolio__item {
-    max-width: 370px;
-    width: 33.3333%;
-    height: 370px;
-    margin: 15px 15px;
-    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: box-shadow 0.3s;
 
-    &:hover {
-        box-shadow: 0px 0px 25px rgba(0,0,0,0.25);
+    &__item {
+        max-width: 370px;
+        width: 33.3333%;
+        height: 370px;
+        margin: 15px 15px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: box-shadow 0.3s;
+
+        &:hover {   
+            box-shadow: 0px 0px 25px rgba(0,0,0,0.25);
+        }
     }
-}
 
-.portfolio__img {
-    display: block;
-    width: 100%;
-}
+    &__img {
+        display: block;
+        width: 100%;
+    }    
 
-.portfolio__content {
-    text-transform: uppercase;
-    position: relative;
-    padding: 14px 19px 0px 13px;
-}
+    &__content {
+        text-transform: uppercase;
+        position: relative;
+        padding: 14px 19px 0px 13px;
+    }
 
-.portfolio__category {
-    color: @black;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-}
+    &__category {
+        color: @black;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+    }
 
-.portfolio__name {
-    font-size: 16px;
-    line-height: 1.19;
-    font-weight: 700;
-    position: relative;
+    &__name {
+        font-size: 16px;
+        line-height: 1.19;
+        font-weight: 700;
+        position: relative;
 
-    .year {
-        position: absolute;
-        right: 0;
+        .year {
+            position: absolute;
+            right: 0;
+        }
     }
 }
 

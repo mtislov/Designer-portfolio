@@ -21,7 +21,7 @@ body.scorll-on {
   padding: 0 15px;
   box-sizing: border-box;
 }
-/* HEADER */
+/* SECTION HEADER */
 .header {
   padding-top: 18px;
   padding-bottom: 15px;
@@ -46,6 +46,11 @@ body.scorll-on {
   width: 57px;
   height: 57px;
   background-color: #2b2a2c;
+}
+.logo__name {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 .logo__name {
   font-size: 16px;
@@ -84,7 +89,7 @@ body.scorll-on {
   border-radius: 30px;
   border: 2px solid #2b2a2c;
   transition: background 0.3s, 
-        color 0.3s;
+            color 0.3s;
 }
 .menu__link.menu__btn:hover {
   background-color: #2b2a2c;
