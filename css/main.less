@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 400;
     color: @black;
     line-height: 1.4;
@@ -756,9 +756,7 @@ body {
     }
 }
 
-.timeline__title,
-.skills,
-.awards {
+.timeline__title {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
@@ -772,32 +770,32 @@ body {
     margin-top: 30px;
     margin-bottom: 27px;
     text-transform: uppercase;
-}
 
-.skills__item {
-    display: flex;
-    justify-content: space-between;
-    max-width: 265px;
-    width: 100%;
-    align-items: center;
-}
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        max-width: 265px;
+        width: 100%;
+        align-items: center;
+    }
 
-.skills__name {
-    font-size: 14px;
-    line-height: 1.57;
-    margin-bottom: 5px;
-}
+    &__name {
+        font-size: 14px;
+        line-height: 1.57;
+        margin-bottom: 5px;
+    }
 
-.skills__bar {
-    max-width: 140px;
-    width: 100%;
-    background-color: #EFEFEF;
-    height: 6px;
-}
+    &__bar {
+        max-width: 140px;
+        width: 100%;
+        background-color: #EFEFEF;
+        height: 6px;
+    }
 
-.skills__progress {
-    background-color: @gray;
-    height: inherit;
+    &__progress {
+        background-color: @gray;
+        height: inherit;
+    }
 }
 
 /* Modals / resume / awards*/
@@ -805,4 +803,17 @@ body {
 .awards {
     margin-top: 30px;
     margin-bottom: 27px;
+    
+    &__item {
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    &__date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
 }
