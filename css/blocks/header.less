@@ -1,0 +1,91 @@
+// main ../main.less
+
+/* SECTION HEADER */
+
+.header {
+    padding-top: 18px;
+    padding-bottom: 15px;
+
+    &__inner {
+        height: 57px;
+        background-color: @white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.logo {
+    width: 100%;
+    max-width: 110px;
+    padding-left: 70px;
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        width: 57px;
+        height: 57px;
+        background-color: @black;
+    }
+
+    &__name {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    &__name {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 12px;
+        color: @gray;
+    }
+}
+
+.nav {
+    max-width: 585px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    
+    &__link {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        color: @black;
+        text-transform: uppercase;
+        transition: border 0.3s;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            border-color: @black;
+        }
+
+        &.menu__btn {
+            padding: 10px 32px;
+            border-radius: 30px;
+            border: 2px solid @black;
+            transition: 
+            background 0.3s, 
+            color 0.3s; 
+
+            &:hover {
+                background-color: @black;
+                color: @white;
+            }
+        }
+    }
+}
