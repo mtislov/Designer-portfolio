@@ -1,0 +1,80 @@
+// main: ../main.less
+
+/* WORKS */
+
+.works {
+    padding-top: 40px;
+
+    &__nav {
+        display: flex;
+        max-width: 255px;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    &__nav-link {
+        font-size: 15px;
+        line-height: 1.37;
+        color: @gray;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.portfolio {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+
+    &__item {
+        max-width: 370px;
+        width: 33.3333%;
+        height: 370px;
+        margin: 15px 15px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: box-shadow 0.3s;
+
+        &:hover {   
+            box-shadow: 0px 0px 25px rgba(0,0,0,0.25);
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }    
+
+    &__content {
+        text-transform: uppercase;
+        position: relative;
+        padding: 14px 19px 0px 13px;
+    }
+
+    &__category {
+        color: @black;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 16px;
+        line-height: 1.19;
+        font-weight: 700;
+        position: relative;
+
+        .year {
+            position: absolute;
+            right: 0;
+        }
+    }
+}

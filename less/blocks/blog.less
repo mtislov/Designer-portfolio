@@ -1,0 +1,98 @@
+// main: ../main.less
+
+/* BLOG */
+
+.blog {
+    padding-top: 90px;
+
+    &__header {
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+    }
+
+    &__title {
+        font-size: 45px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        color: @gray;
+        font-weight: 300;
+    }
+}
+
+.news {
+    padding-top: 50px;
+    padding-bottom: 120px;
+    display: flex;
+    margin: 0 -15px;
+
+    &__item {
+        width: 31.7%;
+        margin: 0 15px;
+        max-width: 370px;
+    }
+
+    &__image {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    &__date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 77px;
+        height: 77px;
+        background-color: @black;
+        color: @white;
+        font-size: 16px;
+        line-height: 1.31;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 1.39;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+
+    &__category {
+        font-size: 15px;
+        line-height: 2;
+        letter-spacing: 0.05em;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 2;
+        font-weight: 300;
+        color: @gray;
+        padding-left: 2px;
+        padding-right: 3px;  
+    }
+
+    &__btn {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        width: 130px;
+        padding: 12px 0;
+        margin: 33px 0 0 0;
+    }
+}
