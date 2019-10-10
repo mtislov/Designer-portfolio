@@ -1,0 +1,154 @@
+// main: ../main.less
+
+/* Modals / resume */
+
+.resume {
+    
+    &__title {
+        text-align: center;
+        font-size: 45px;
+        line-height: 1.17;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 0 55px 0;
+        padding-top: 80px;
+    }
+
+    &__btns {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        width: 147px;
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 2;
+        letter-spacing: 0.05em;
+        padding: 8px 0;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+
+    &__btn:last-child {
+        margin-right: 0px;
+    }
+}
+
+/* Modals / resume / timeline*/
+
+.timeline {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 75px;
+    justify-content: space-between;
+
+    &__left, 
+    &__right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__left {
+        border-right: 1px solid @gray;
+        text-align: right;
+        padding-right: 47px;
+    }
+
+    &__right {
+        padding-left: 47px;
+    }
+
+    &__date {
+        font-size: 14px;
+        line-height: 1.57;
+        text-decoration: underline;
+        margin-top: 38px;
+        margin-bottom: 12px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.37;
+        margin-bottom: 4px;
+    }
+
+    &__position {
+        font-size: 14px;
+        line-height: 1.57;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+}
+
+.timeline__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+
+/* Modals / resume / skills*/
+
+.skills {
+    margin-top: 30px;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        max-width: 265px;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 14px;
+        line-height: 1.57;
+        margin-bottom: 5px;
+    }
+
+    &__bar {
+        max-width: 140px;
+        width: 100%;
+        background-color: #EFEFEF;
+        height: 6px;
+    }
+
+    &__progress {
+        background-color: @gray;
+        height: inherit;
+    }
+}
+
+/* Modals / resume / awards*/
+
+.awards {
+    margin-top: 30px;
+    margin-bottom: 27px;
+    
+    &__item {
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    &__date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+}

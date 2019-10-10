@@ -1,6 +1,3 @@
-html {
-  font-size: 15px;
-}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -476,7 +473,7 @@ body.scorll-on {
 .footer__right .menu__btn:hover {
   border-color: #ffffff;
 }
-/* MODALS */
+/* MODAL */
 .modal {
   padding: 15px;
   box-sizing: border-box;
