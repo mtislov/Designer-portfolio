@@ -499,6 +499,10 @@ body.scorll-on {
   margin: auto;
   background-color: #ffffff;
 }
+.modal-dialog--small {
+  max-width: 900px;
+  margin: 0 auto;
+}
 /* Modals / modal-work */
 .modal-work {
   display: flex;
@@ -664,4 +668,27 @@ body.scorll-on {
   top: 0;
   left: 0;
   margin: 0;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__left {
+  width: 47.777777%;
+  background: #ffffff;
+  padding: 28px 34px 0px 34px;
+}
+.contact__right {
+  width: 52.222222%;
+}
+.contact__title {
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 6px;
 }
