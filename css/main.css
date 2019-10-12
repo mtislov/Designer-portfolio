@@ -727,4 +727,25 @@ body.scorll-on {
 .form__input {
   display: block;
   width: 100%;
+  padding: 20 28px;
+  margin-bottom: 30px;
+  color: #2b2a2c;
+  font-family: inherit;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 27px;
+  line-height: 1.4;
+}
+.form__input:focus {
+  outline: none;
+  border: 1px solid #2b2a2c;
+}
+.form__textarea {
+  height: 200px;
+  resize: none;
+}
+.form__btn {
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 0;
 }
