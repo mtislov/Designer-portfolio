@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://kit.fontawesome.com/7ec9601d7e.js" crossorigin="anonymous"></script>
 </head>
-<body class="body scroll-on">
+<body class="body">
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header__inner">
@@ -234,8 +234,9 @@
 	</footer>
 
 	<!-- Modals -->
-	<div class="modal" id="modal-work">
+	<div class="modal active" id="modal-work">
 		<div class="modal__dialog">
+			<a href="#" class="modal__close" data-close></a>
 			<div class="modal-work">
 				<div class="modal-work__preview">
 					<img src="https://place-hold.it/787x774" alt="blog-img">
@@ -252,6 +253,7 @@
 	</div>
 	<div class="modal" id="modal-resume">
 		<div class="modal__dialog">
+			<a href="#" class="modal__close" data-close="#modal-contact"></a>
 			<div class="resume">
 				<h2 class="resume__title">Resume</h2>
 				<div class="resume__btns">
@@ -343,6 +345,7 @@
 
 	<div class="modal" id="modal-contact">
 		<div class="modal__dialog modal__dialog--small">
+			<a href="#" class="modal__close" data-close></a>
 			<div class="contact">
 				<div class="contact__left">
 					<h3 class="contact__title">LET'S TALK!</h3>
