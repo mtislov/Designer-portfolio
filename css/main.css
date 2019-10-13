@@ -475,6 +475,7 @@ body.scorll-on {
 }
 /* MODAL */
 .modal {
+  display: none;
   padding: 15px;
   box-sizing: border-box;
   width: 100%;
@@ -489,9 +490,6 @@ body.scorll-on {
 .modal.active {
   display: flex;
 }
-.modal.no-active {
-  display: none;
-}
 .modal__dialog {
   box-sizing: border-box;
   max-width: 1200px;
@@ -499,9 +497,9 @@ body.scorll-on {
   margin: auto;
   background-color: #ffffff;
 }
-.modal-dialog--small {
+.modal__dialog--small {
   max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
 }
 /* Modals / modal-work */
 .modal-work {

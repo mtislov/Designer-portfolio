@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://kit.fontawesome.com/7ec9601d7e.js" crossorigin="anonymous"></script>
 </head>
-<body class="body scroll-off">
+<body class="body scroll-on">
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header__inner">
@@ -23,8 +23,7 @@
 						<li><a href="#" class="menu__link" data-scroll="#about">about me</a></li>
 						<li><a href="#" class="menu__link" data-scroll="#blog">blog</a></li>
 						<li><a href="#" class="menu__link" data-scroll="#testimonial">review</a></li>
-						<li><a href="#" class="menu__link">contact</a></li>
-						<li><a href="#" class="menu__link menu__btn">hire me</a></li>
+						<li><a href="#" class="menu__link menu__btn" data-modal="#modal-contact">hire me</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -45,8 +44,8 @@
 						<li><a href="#" class="social__link inst" target="_blank"><i class="fab fa-instagram"></i></a></li>
 						<li><a href="#" class="social__link tw" target="_blank"><i class="fab fa-twitter"></i></a></li>
 					</ul>
-					<button type="button" class="btn btn--short">Hire me</button>
-					<button type="button" class="btn btn--long">see my resume</button>
+					<button type="button" class="btn btn--short" data-modal="#modal-contact">Hire me</button>
+					<button type="button" class="btn btn--long" data-modal="#modal-resume">see my resume</button>
 				</div>
 			</div>
 		</div>
@@ -134,8 +133,8 @@
 					<h3 class="about__title">about me</h3>
 					<p class="about__who">who am i</p>
 					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse .</p>
-					<button type="button" class="btn btn--short">Hire me</button>
-					<button type="button" class="btn btn--long">see my resume</button>
+					<button type="button" class="btn btn--short" data-modal="#modal-contact">Hire me</button>
+					<button type="button" class="btn btn--long" data-modal="#modal-resume">see my resume</button>
 				</div>
 
 			</div>
@@ -226,8 +225,8 @@
 						<li><a href="#" class="menu__link">work</a></li>
 						<li><a href="#" class="menu__link">about me</a></li>
 						<li><a href="#" class="menu__link">blog</a></li>
-						<li><a href="#" class="menu__link">contact</a></li>
-						<li><a href="#" class="menu__link menu__btn">hire me</a></li>
+						<li><a href="#" class="menu__link">review</a></li>
+						<li><a href="#" class="menu__link menu__btn" data-modal="#modal-contact">hire me</a></li>
 					</ul>
 				</div>
 			</div>
@@ -235,7 +234,7 @@
 	</footer>
 
 	<!-- Modals -->
-	<div class="modal no-active">
+	<div class="modal" id="modal-work">
 		<div class="modal__dialog">
 			<div class="modal-work">
 				<div class="modal-work__preview">
@@ -251,7 +250,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal no-active">
+	<div class="modal" id="modal-resume">
 		<div class="modal__dialog">
 			<div class="resume">
 				<h2 class="resume__title">Resume</h2>
@@ -342,8 +341,8 @@
 		</div>
 	</div>
 
-	<div class="modal on-active">
-		<div class="modal-dialog modal-dialog--small">
+	<div class="modal" id="modal-contact">
+		<div class="modal__dialog modal__dialog--small">
 			<div class="contact">
 				<div class="contact__left">
 					<h3 class="contact__title">LET'S TALK!</h3>
@@ -360,11 +359,11 @@
 					<form class="form" method="post" action="/">
 						<div class="form__group">
 							<label class="form__lable" for="input-email">Adress e-mail</label>
-							<input class="form__input" id="input-email" type="email" name="email" placeholder="email@gmail.com">
+							<input class="form__input" id="input-email" type="email" name="email" placeholder="email@gmail.com" required>
 						</div>
 						<div class="form__group">
 							<label class="form__lable" for="request">Request</label>
-							<textarea class="form__input form__textarea" id="request" name="request" placeholder="Type your request..."></textarea>
+							<textarea class="form__input form__textarea" id="request" name="request" placeholder="Type your request..." required></textarea>
 						</div>
 						<button class="btn btn--short form__btn" type="submit">Send</button>
 					</form>
