@@ -5,9 +5,9 @@ $(function() {
 
         event.preventDefault();
 
-        var $this = $(this);
-        var blockId = $this.data("scroll");
-        var blockOffset = $(blockId).offset().top;
+        let $this = $(this);
+        let blockId = $this.data("scroll");
+        let blockOffset = $(blockId).offset().top;
 
         $("#menu__list a").removeClass("active");
         $this.addClass("active");
@@ -16,4 +16,26 @@ $(function() {
             scrollTop: blockOffset
         }, 500);
     })
+});
+
+
+/* Modal */ 
+
+$(function() {
+
+    const modalCall = $("[data-modal]");
+
+    modalCall.on("click", function(event) {
+
+        event.preventDefault();
+
+        let $this = $(this);
+        let modalId = $this.data("modal");
+        
+
+        $(modalId).addClass("active");
+    });
+
+    
+    
 });
