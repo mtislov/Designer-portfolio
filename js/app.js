@@ -46,7 +46,8 @@ $(function() {
         let modalParent = $this.parents(".modal");
         
         modalParent.removeClass("active");
-        $("body").removeClass("scroll-on");
+        $("body").removeClass("scroll-off");
+        $("body").addClass("scroll-on");
 
     });
 
