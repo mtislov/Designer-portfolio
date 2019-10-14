@@ -497,6 +497,7 @@ body.scorll-on {
   margin: auto;
   background-color: #ffffff;
   position: relative;
+  transition: transform 0.3s linear;
 }
 .modal__dialog--small {
   max-width: 900px;
