@@ -26,6 +26,7 @@ $(function() {
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
 
+
     modalCall.on("click", function(event) {
         event.preventDefault();
 
@@ -42,7 +43,6 @@ $(function() {
         }, 200);
 
     });
-
 
     modalClose.on("click", function(event) {
         event.preventDefault();
@@ -77,6 +77,4 @@ $(function() {
     $(".modal__dialog").on("click", function(event) {
         event.stopPropagation();
     });
-    
-    
 });
