@@ -3,21 +3,24 @@
 /* footer */
 
 .footer {
-    height: 58px;
+    
     font-size: 14px;
     background: @black;
     color: #8D8D8E;
+    padding: 15px 0;
 
     &__inner {
         display: flex;
-        justify-content: space-between;
-        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 .footer__left {
     display: flex;
     align-items: center;
+    width: 50%;
+    min-width: 500px;
 }
 
 .footer__social {
@@ -35,6 +38,14 @@
 }
 
 .footer__right {
+    min-width: 500px;
+    width: 50%;
+
+    .menu {
+        max-width: 465px;
+        margin-left: auto;
+    }
+
     .menu__link {
         color: inherit;
         font-size: 14px;
