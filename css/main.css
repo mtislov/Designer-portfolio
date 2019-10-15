@@ -92,6 +92,19 @@ body.scorll-on {
   background-color: #2b2a2c;
   color: #ffffff;
 }
+@media (max-width: 900px) {
+  .about {
+    padding: 80px 0;
+  }
+  .about__title,
+  .about__who {
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .about__btn {
+    margin-top: 15px;
+  }
+}
 /* INTRO */
 .intro {
   padding-top: 15px;
@@ -219,7 +232,7 @@ body.scorll-on {
 }
 .portfolio__item {
   max-width: 370px;
-  width: 33.3333%;
+  min-width: 290px;
   padding-bottom: 15px;
   margin: 15px 15px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -270,6 +283,7 @@ body.scorll-on {
   width: 50%;
   height: 608px;
   background: url("../img/about/about-bg.png") no-repeat;
+  background-size: contain;
 }
 .about__content {
   width: 50%;
@@ -785,4 +799,25 @@ body.scorll-on {
   margin: 0;
   margin-left: auto;
   margin-right: 0;
+}
+@media (max-width: 900px) {
+  .about {
+    padding: 80px 0;
+  }
+  .about__title,
+  .about__who {
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .about__btn {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .works .portfolio__item {
+    width: 33.333333%;
+  }
+  .about__content {
+    padding: 0 5px;
+  }
 }
