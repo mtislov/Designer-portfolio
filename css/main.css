@@ -814,10 +814,33 @@ body.scorll-on {
   }
 }
 @media (max-width: 800px) {
+  .intro__btn {
+    display: block;
+    margin: 20px 0px 0px 0px;
+  }
   .works .portfolio__item {
     width: 33.333333%;
   }
   .about__content {
     padding: 0 5px;
+  }
+}
+@media (max-width: 700px) {
+  .intro__inner {
+    background: none;
+    padding-bottom: 50px;
+  }
+  .intro__btn {
+    margin: 20px auto;
+  }
+  .intro__content {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro__content .social {
+    justify-content: center;
+  }
+  .header .nav {
+    display: none;
   }
 }

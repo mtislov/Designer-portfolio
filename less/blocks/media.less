@@ -17,6 +17,13 @@
 }
 
 @media (max-width: 800px) {
+    .intro {
+        &__btn {
+            display: block;
+            margin: 20px 0px 0px 0px;  
+        }
+    }
+
     .works {
         .portfolio__item {
             width: 33.333333%;
@@ -27,6 +34,33 @@
         &__content {
             padding: 0 5px;
         }
+    }
+}
 
+@media (max-width: 700px) {
+    .intro {
+        &__inner {
+            background: none;
+            padding-bottom: 50px;
+        }
+
+        &__btn {
+            margin: 20px auto;
+        }
+
+        &__content {
+            margin: 0 auto;
+            text-align: center;
+
+            .social {
+                justify-content: center;
+            }
+        }
+    }
+
+    .header {
+        .nav {
+            display: none;
+        }
     }
 }
