@@ -125,5 +125,26 @@
             margin-right: 0;
         }
     }
-   
+
+    .footer {
+        &__inner,
+        &__left {
+            flex-direction: column;
+            min-width: 100%;
+        }
+
+        &__social {
+            margin: 0;
+        }
+
+        &__right {
+            min-width: 100%;
+            .menu {
+                flex-direction: column;
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
 }

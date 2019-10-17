@@ -890,4 +890,21 @@ body.scorll-on {
   .about__btn:last-child {
     margin-right: 0;
   }
+  .footer__inner,
+  .footer__left {
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .footer__social {
+    margin: 0;
+  }
+  .footer__right {
+    min-width: 100%;
+  }
+  .footer__right .menu {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }
