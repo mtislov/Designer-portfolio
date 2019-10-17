@@ -35,6 +35,25 @@
             padding: 0 5px;
         }
     }
+
+    .blog {
+        .news {
+            flex-wrap: wrap;
+            padding: 60px 0;
+
+            &__item {
+                width: 45%;
+            }
+
+            &__text {
+                font-size: 13px;
+            }
+
+            &__btn {
+                margin-top: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -61,6 +80,22 @@
     .header {
         .nav {
             display: none;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .blog {
+        .news {
+            padding: 30px 0;
+
+            &__item {
+                width: 100%;
+            }
+
+            &__text {
+                font-size: 13px;
+            }
         }
     }
 }
