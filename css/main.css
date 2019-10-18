@@ -562,9 +562,18 @@ body.scorll-on {
 /* Modals / modal-work */
 .modal-work {
   display: flex;
+  align-items: flex-start;
+}
+.modal-work__preview {
+  max-width: 787px;
+  width: 66%;
+}
+.modal-work__img {
+  width: 100%;
 }
 .modal-work__content {
-  padding: 50px 95px 175px 27px;
+  padding: 50px 95px 0px 27px;
+  width: 34%;
 }
 .modal-work__title {
   font-size: 32px;
