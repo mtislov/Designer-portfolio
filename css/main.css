@@ -745,9 +745,16 @@ body.scorll-on {
   width: 47.777777%;
   background: #ffffff;
   padding: 28px 34px 0px 34px;
+  box-sizing: border-box;
 }
 .contact__right {
   width: 52.222222%;
+  display: flex;
+  align-items: center;
+}
+.contact__img {
+  display: block;
+  width: 100%;
 }
 .contact__title {
   font-size: 45px;
@@ -868,6 +875,16 @@ body.scorll-on {
   }
   .modal-work__content {
     width: 100%;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact__left,
+  .contact__right {
+    width: 100%;
+  }
+  .contact__right {
+    display: none;
   }
 }
 @media (max-width: 700px) {
