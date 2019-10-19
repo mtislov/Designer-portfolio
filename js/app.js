@@ -34,7 +34,7 @@ $(function() {
         let modalId = $this.data('modal');
 
         $(modalId).addClass('active');
-        $("body").addClass('no-scroll');
+        $("body").addClass('scroll-off');
 
         setTimeout(function() {
             $(modalId).find(".modal__dialog").css({
@@ -56,7 +56,7 @@ $(function() {
 
         setTimeout(function() {
             modalParent.removeClass('active');
-            $("body").removeClass('no-scroll');
+            $("body").removeClass('scroll-off');
         }, 200);
     });
 
