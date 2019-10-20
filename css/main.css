@@ -85,8 +85,7 @@ body.scorll-on {
   padding: 10px 32px;
   border-radius: 30px;
   border: 2px solid #2b2a2c;
-  transition: background 0.3s, 
-            color 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 .menu__link.menu__btn:hover {
   background-color: #2b2a2c;
@@ -121,7 +120,7 @@ body.scorll-on {
   padding-top: 70px;
   font-size: 32px;
   font-weight: 200;
-  line-height: 1.60;
+  line-height: 1.6;
 }
 .intro__title {
   line-height: 1.16;
@@ -145,18 +144,6 @@ body.scorll-on {
   height: 41px;
   text-align: center;
   vertical-align: middle;
-}
-.social__link:hover .fab,
-.social__link:active .fab {
-  opacity: 0.5;
-}
-.social__link .fab {
-  padding-top: 5px;
-  display: inline-block;
-  font-size: 30px;
-  vertical-align: middle;
-  color: #ffffff;
-  transition: opacity 0.3s;
 }
 .social__link.be {
   background-color: #1869ff;
@@ -475,10 +462,6 @@ body.scorll-on {
 }
 .footer__social .social__link {
   background-color: inherit;
-}
-.footer__social .social__link .fab {
-  font-size: 24px;
-  padding-top: 7px;
 }
 .footer__right {
   min-width: 500px;
