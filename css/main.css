@@ -874,6 +874,9 @@ body.scorll-on {
   .modal-work__content {
     width: 100%;
   }
+  .modal-work__text {
+    padding-bottom: 35px;
+  }
   .contact {
     flex-direction: column;
   }
