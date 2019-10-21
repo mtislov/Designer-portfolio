@@ -70,7 +70,7 @@ $(function() {
 
         setTimeout(function() {
             $this.removeClass('active');
-            $("body").removeClass('no-scroll');
+            $("body").removeClass('scroll-off');
         }, 200);
     });
 
