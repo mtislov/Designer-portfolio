@@ -975,6 +975,10 @@ body.scorll-on {
   }
 }
 @media (max-width: 500px) {
+  .social__link {
+    width: 40px;
+    height: 40px;
+  }
   .modal {
     padding: 0;
     background-color: #ffffff;
