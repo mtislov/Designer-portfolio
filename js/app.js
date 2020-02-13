@@ -94,3 +94,5 @@ function PrintContent() {
         WindowObject.close();
     },1);
 }
+
+/* Modal PRINT*/
