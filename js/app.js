@@ -96,3 +96,29 @@ function PrintContent() {
 }
 
 /* Modal PRINT*/
+
+
+
+
+function filterItemsByCategory(category, itemList) {
+
+    
+    for (let item of itemList) {
+        if (item.dataset.category !== category) {item.style.display = "none"; continue};
+        item.style.display = 'block';
+    }
+
+}
+
+
+let worksList = document.querySelectorAll(".portfolio__item");
+let categoryBtns = document.querySelectorAll("[data-btnCategory");
+
+for (let btn of categoryBtns) {
+    
+
+    btn.onclick = function(event) {
+        event.preventDefault();
+        filterItemsByCategory(btn.dataset.btncategory, worksList);
+    }
+}
