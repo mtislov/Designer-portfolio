@@ -95,20 +95,7 @@ function PrintContent() {
     },1);
 }
 
-/* Modal PRINT*/
-
-
-
-
-function filterItemsByCategory(category, itemList) {
-
-    
-    for (let item of itemList) {
-        if (item.dataset.category !== category) {item.style.display = "none"; continue};
-        item.style.display = 'block';
-    }
-
-}
+/* Filter */
 
 
 let worksList = document.querySelectorAll(".portfolio__item");
@@ -116,9 +103,18 @@ let categoryBtns = document.querySelectorAll("[data-btnCategory");
 
 for (let btn of categoryBtns) {
     
-
     btn.onclick = function(event) {
         event.preventDefault();
         filterItemsByCategory(btn.dataset.btncategory, worksList);
+    }
+}
+
+function filterItemsByCategory(category, worksList) {
+
+    for (let work of worksList) {
+
+        if (category == 'all') {work.style.display = "block"; continue}
+        if (work.dataset.category !== category) {work.style.display = "none"; continue};
+        work.style.display = 'block';
     }
 }
